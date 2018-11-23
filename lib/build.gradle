@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 201920
-        versionName "1.0.1"
+        versionCode 20181123
+        versionName "1.0.2"
     }
 
     buildTypes {
@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    compileOnly 'com.android.support:recyclerview-v7:27.1.1'
     api 'com.github.yangwb1259883028:selectmanager:1.0.1'
 }
 
