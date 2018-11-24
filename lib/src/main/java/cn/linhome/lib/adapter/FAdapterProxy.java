@@ -7,8 +7,6 @@ import cn.linhome.lib.adapter.data.ListDataHolder;
 
 import java.util.List;
 
-import cn.linhome.lib.adapter.data.ListDataHolder;
-
 public class FAdapterProxy<T> implements FAdapter<T>
 {
     private DataHolder<T> mDataHolder;

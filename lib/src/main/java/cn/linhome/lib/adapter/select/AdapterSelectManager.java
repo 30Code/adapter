@@ -3,7 +3,6 @@ package cn.linhome.lib.adapter.select;
 import cn.linhome.lib.adapter.FAdapter;
 import cn.linhome.lib.adapter.data.DataHolder;
 
-import cn.linhome.lib.adapter.FAdapter;
 import cn.linhome.lib.selectmanager.FSelectManager;
 
 import java.util.List;

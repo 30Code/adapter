@@ -4,7 +4,6 @@ import android.app.Activity;
 
 import cn.linhome.lib.adapter.FRecyclerAdapter;
 
-import cn.linhome.lib.adapter.FRecyclerAdapter;
 import cn.linhome.lib.selectmanager.FSelectManager;
 
 public abstract class FSelectRecyclerAdapter<T> extends FRecyclerAdapter<T> implements FSelectableAdapter<T>

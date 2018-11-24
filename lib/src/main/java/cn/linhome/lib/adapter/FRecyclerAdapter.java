@@ -13,9 +13,6 @@ import cn.linhome.lib.adapter.viewholder.FRecyclerViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.linhome.lib.adapter.callback.ItemLongClickCallback;
-import cn.linhome.lib.adapter.viewholder.FRecyclerViewHolder;
-
 /**
  * RecyclerView适配器
  *
