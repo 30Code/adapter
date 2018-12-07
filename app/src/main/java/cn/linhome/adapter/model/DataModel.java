@@ -1,13 +1,9 @@
 package cn.linhome.adapter.model;
 
-import cn.linhome.lib.selectmanager.FSelectManager;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Administrator on 2018/3/19.
- */
+import cn.linhome.lib.selectionmanager.FSelectManager;
 
 public class DataModel extends FSelectManager.SelectableModel
 {

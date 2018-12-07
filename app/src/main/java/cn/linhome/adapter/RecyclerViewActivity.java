@@ -13,11 +13,8 @@ import android.widget.TextView;
 import cn.linhome.adapter.model.DataModel;
 import cn.linhome.lib.adapter.select.FSelectSimpleRecyclerAdapter;
 import cn.linhome.lib.adapter.viewholder.FRecyclerViewHolder;
-import cn.linhome.lib.selectmanager.FSelectManager;
+import cn.linhome.lib.selectionmanager.FSelectManager;
 
-/**
- * Created by Administrator on 2018/3/19.
- */
 public class RecyclerViewActivity extends Activity
 {
     public static final String TAG = RecyclerViewActivity.class.getSimpleName();

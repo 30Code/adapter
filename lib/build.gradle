@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.github.yangwb1259883028'
+group = 'com.github.30Code'
 
 android {
     compileSdkVersion 27
@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 20181124
-        versionName "1.0.2"
+        versionCode 20181207
+        versionName "1.0.3"
     }
 
     buildTypes {
@@ -23,7 +23,7 @@ android {
 
 dependencies {
     compileOnly 'com.android.support:recyclerview-v7:27.1.1'
-    api 'com.github.yangwb1259883028:selectmanager:1.0.1'
+    api 'com.github.30Code:selectionmanager:1.0.2'
 }
 
 // 指定编码

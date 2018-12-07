@@ -1,6 +1,6 @@
 package cn.linhome.lib.adapter.select;
 
-import cn.linhome.lib.selectmanager.FSelectManager;
+import cn.linhome.lib.selectionmanager.FSelectManager;
 
 public interface FSelectableAdapter<T>
 {

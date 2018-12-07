@@ -3,8 +3,7 @@ package cn.linhome.lib.adapter.select;
 import android.app.Activity;
 
 import cn.linhome.lib.adapter.FSimpleRecyclerAdapter;
-
-import cn.linhome.lib.selectmanager.FSelectManager;
+import cn.linhome.lib.selectionmanager.FSelectManager;
 
 public abstract class FSelectSimpleRecyclerAdapter<T> extends FSimpleRecyclerAdapter<T> implements FSelectableAdapter<T>
 {

@@ -10,13 +10,8 @@ import android.widget.TextView;
 
 import cn.linhome.adapter.model.DataModel;
 import cn.linhome.lib.adapter.select.FSelectSimpleAdapter;
+import cn.linhome.lib.selectionmanager.FSelectManager;
 
-import cn.linhome.adapter.model.DataModel;
-import cn.linhome.lib.selectmanager.FSelectManager;
-
-/**
- * Created by Administrator on 2018/3/19.
- */
 public class ListViewActivity extends Activity
 {
     public static final String TAG = ListViewActivity.class.getSimpleName();
