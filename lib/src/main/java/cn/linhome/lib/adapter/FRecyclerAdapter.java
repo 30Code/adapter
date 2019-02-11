@@ -125,6 +125,21 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
         }
     }
 
+    public void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate, List<Object> payloads)
+    {
+        final T model = getDataHolder().get(position);
+
+        if (isUpdate)
+        {
+            holder.onUpdateData(position, model);
+            onUpdateData(holder, position, model);
+        } else
+        {
+            holder.onBindData(position, model);
+            onBindData(holder, position, model);
+        }
+    }
+
     /**
      * 创建ViewHolder
      *
