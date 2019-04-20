@@ -4,12 +4,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.30Code'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 27
-        versionCode 20190211
+        targetSdkVersion 28
+        versionCode 20190420
         versionName "1.0.3"
     }
 
@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    compileOnly 'com.android.support:recyclerview-v7:27.1.1'
+    compileOnly 'com.android.support:recyclerview-v7:28.0.0'
     api 'com.github.30Code:selectionmanager:1.0.2'
 }
 
