@@ -1,10 +1,11 @@
 package cn.linhome.lib.adapter;
 
 import android.app.Activity;
-import android.support.v4.view.PagerAdapter;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import cn.linhome.lib.adapter.callback.ItemClickCallback;
 import cn.linhome.lib.adapter.data.DataHolder;

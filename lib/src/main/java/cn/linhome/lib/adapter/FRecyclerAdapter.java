@@ -1,9 +1,10 @@
 package cn.linhome.lib.adapter;
 
 import android.app.Activity;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import cn.linhome.lib.adapter.callback.ItemClickCallback;
 import cn.linhome.lib.adapter.callback.ItemLongClickCallback;
