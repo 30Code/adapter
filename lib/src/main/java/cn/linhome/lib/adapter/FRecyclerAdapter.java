@@ -111,7 +111,7 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
         onBindViewHolderInternal(holder, position, false);
     }
 
-    public void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate)
+    private void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate)
     {
         final T model = getDataHolder().get(position);
 
@@ -126,7 +126,7 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
         }
     }
 
-    public void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate, List<Object> payloads)
+    private void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate, List<Object> payloads)
     {
         final T model = getDataHolder().get(position);
 
@@ -160,7 +160,7 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
     public abstract void onBindData(FRecyclerViewHolder<T> holder, int position, T model);
 
     /**
-     * 刷新item的时候触发，默认整个item重新绑定数据
+     * 刷新item的时候触发，（局部刷新）
      *
      * @param holder
      * @param position
@@ -168,7 +168,7 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
      */
     public void onUpdateData(FRecyclerViewHolder<T> holder, int position, T model)
     {
-        onBindData(holder, position, model);
+//        onBindData(holder, position, model);
     }
 
     private FAdapterProxy<T> getAdapterProxy()
