@@ -130,7 +130,7 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
         }
     }
 
-    private void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate, List<Object> payloads)
+    public void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate, List<Object> payloads)
     {
 //        final T model = getDataHolder().get(position);
 //
