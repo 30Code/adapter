@@ -102,7 +102,11 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
     @Override
     public final void onBindViewHolder(FRecyclerViewHolder<T> holder, int position, List<Object> payloads)
     {
-        onBindViewHolderInternal(holder, position, true);
+        if (payloads != null && payloads.size() != 0) {
+            onBindViewHolderInternal(holder, position, true, payloads);
+        } else {
+            onBindViewHolderInternal(holder, position, true);
+        }
     }
 
     @Override
@@ -128,17 +132,17 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
 
     private void onBindViewHolderInternal(FRecyclerViewHolder<T> holder, int position, boolean isUpdate, List<Object> payloads)
     {
-        final T model = getDataHolder().get(position);
-
-        if (isUpdate)
-        {
-            holder.onUpdateData(position, model);
-            onUpdateData(holder, position, model);
-        } else
-        {
-            holder.onBindData(position, model);
-            onBindData(holder, position, model);
-        }
+//        final T model = getDataHolder().get(position);
+//
+//        if (isUpdate)
+//        {
+//            holder.onUpdateData(position, model);
+//            onUpdateData(holder, position, model);
+//        } else
+//        {
+//            holder.onBindData(position, model);
+//            onBindData(holder, position, model);
+//        }
     }
 
     /**
@@ -168,7 +172,7 @@ public abstract class FRecyclerAdapter<T> extends RecyclerView.Adapter<FRecycler
      */
     public void onUpdateData(FRecyclerViewHolder<T> holder, int position, T model)
     {
-//        onBindData(holder, position, model);
+        onBindData(holder, position, model);
     }
 
     private FAdapterProxy<T> getAdapterProxy()

@@ -73,13 +73,13 @@ public abstract class FRecyclerViewHolder<T> extends RecyclerView.ViewHolder
     public abstract void onBindData(int position, T model);
 
     /**
-     * 刷新item的时候触发，(局部刷新)
+     * 刷新item的时候触发
      *
      * @param position
      * @param model
      */
     public void onUpdateData(int position, T model)
     {
-//        onBindData(position, model);
+        onBindData(position, model);
     }
 }
